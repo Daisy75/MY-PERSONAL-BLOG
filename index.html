@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
   <head>
     <style>
@@ -16,7 +16,7 @@
       }
 
       .title {
-        padding: 20px 0;
+        padding: 20px 17px;
         color: white;
         float: left;
         width: 700px;
@@ -56,19 +56,21 @@
       .page {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start;
+        justify-content: space-between;
+        max-width: 1000px;
+        margin: 0px auto;
+        padding: 20px;
+      }
+      .text, .image{
+        box-sizing: border-box;
         padding: 20px;
       }
 
       .text {
+        flex:1 1 60%;
         color: white;
-        max-width: 700px;
         font-size: 21px;
         font-family: 'Playfair Display', serif;
-        text-align: center;
-        flex: 1 1 400px;
-        padding: 10px;
       }
 
       .text h1 {
@@ -77,13 +79,13 @@
       }
 
       .image {
-        width: 300px;
+        flex: 1 1 35%;
         height: 300px;
         background: url("butterfly.jpeg") no-repeat center center;
         background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
         mix-blend-mode: color-dodge;
-        margin: 40px 20px;
-        flex: 0 0 300px;
       }
 
       p {
@@ -97,12 +99,15 @@
         }
 
         .text {
-          font-size: 18px;
-          padding: 0 15px;
+          flex: 1 1 100%;
+          text-align: center;
+          padding: 10px;
         }
 
         .image {
-          margin-top: 30px;
+          flex: 1 1 100%;
+          text-align: center;
+          padding: 10px;
         }
 
         .title, ul li {
@@ -157,4 +162,141 @@
       </div>
     </div>
   </body>
+</html>-->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      background: url("starrynight.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .top {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    .top h1 {
+      margin: 0;
+    }
+
+    .menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .menu li {
+      display: inline;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 5px 10px;
+    }
+
+    .menu a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+
+    .page {
+      max-width: 1000px;
+      margin: 50px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    .text {
+      flex: 1;
+      color: white;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    .text h1 {
+      margin-top: 0;
+    }
+
+    .image {
+      width: 300px;
+      height: 300px;
+      background: url("butterfly.jpeg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      mix-blend-mode: color-dodge;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 768px) {
+      .page {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image {
+        margin-top: 30px;
+      }
+
+      .text {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top">
+    <h1>UNFILTERED DRAFTS</h1>
+    <h3>"Where every word finds its place."</h3>
+    <div class="menu">
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">GALLERY</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="text">
+      <h1>Our Shared Memoir</h1>
+      <p>
+        Dear Soul friend,<br><br>
+        We probably don’t know each other, but we are more akin than you might think. Even as strangers,
+        we carry echoes of each other’s stories. Our paths could be completely different — but haven’t we
+        gone through the same phases of life? Haven’t we been dealt similar cards of pain, guilt, and regret?<br><br>
+        At our core, don’t we all crave happiness, compassion, and peace? Isn’t the desire to be loved,
+        understood, and respected something we universally share — whether by ourselves or someone else?
+        We all get lost while trying to find clarity, doubt ourselves, and dread the worst possibilities.
+        At times, we get hopeless too.<br><br>
+        But that’s what makes us empathize with each other. That’s why we don’t always need a reason to be kind.
+        Maybe we’ve not walked in each other’s shoes — but we’ve kind of tried them on. So why not give the
+        benefit of the doubt? Why skip to the ending when we don’t even know the whole story?
+        Let’s pause before we draw conclusions. Let’s read between the lines before we draw the line.
+        Let’s share a fragment of time that we’d both highlight in our own memoirs.
+      </p>
+    </div>
+
+    <div class="image"></div>
+  </div>
+
+</body>
 </html>
