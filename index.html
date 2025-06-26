@@ -1,105 +1,160 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <style>
-    body {
-      background: url("starrynight.jpeg") no-repeat center center fixed;
-      background-size: cover;
-      margin: 0;
-      font-family: sans-serif;
-    }
+  <head>
+    <style>
+      body {
+        background: url("/Users/arshsinghbhardwaj/Downloads/WhatsApp Image 2025-06-26 at 14.09.20.jpeg") no-repeat center center fixed;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+      }
 
-    .menu {
-      background: black;
-      padding: 20px 0;
-    }
+      .top {
+        background: rgba(0, 0, 0, 0.643);
+        height: 130px;
+        margin: 0 -7px;
+      }
 
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
+      .title {
+        padding: 20px 0;
+        color: white;
+        float: left;
+        width: 700px;
+      }
 
-    ul li {
-      color: white;
-      font-size: 25px;
-      margin: 0 20px;
-    }
+      .menu {
+        padding: 20px 0;
+        height: 77px;
+      }
 
-    .page {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 40px 20px;
-    }
+      ul {
+        display: flex;
+        margin: 0;
+        list-style-type: none;
+        padding: 0;
+      }
 
-    .text {
-      color: white;
-      max-width: 700px;
-      font-size: 21px;
-      margin: 20px;
-      text-align: center;
-    }
+      ul li {
+        color: white;
+        text-align: center;
+        width: 300px;
+        font-size: 21px;
+        margin: 25px 10px;
+        border-right: 2px white;
+      }
 
-    .text h1 {
-      margin-top: 0;
-      margin-bottom: 30px;
-    }
+      a {
+        color: white;
+        text-decoration: none;
+      }
 
-    .image {
-      width: 300px;
-      height: 300px;
-      background: url("butterfly.jpeg") no-repeat center center;
-      background-size: contain;
-      margin: 20px;
-      mix-blend-mode: color-dodge;
-    }
+      a:hover {
+        display: block;
+        background: rgba(169, 169, 169, 0.496);
+      }
 
-    /* Responsive adjustments for mobile */
-    @media (max-width: 768px) {
       .page {
-        flex-direction: column;
-        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px;
       }
 
-      .text, .image {
-        margin: 10px 0;
+      .text {
+        color: white;
+        max-width: 700px;
+        font-size: 21px;
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        flex: 1 1 400px;
+        padding: 10px;
       }
-    }
-  </style>
-</head>
-<body>
-  <div class="main">
-    <div class="menu">
-      <ul>
-        <li>HOME</li>
-        <li>ABOUT</li>
-        <li>RESOURCES</li>
-        <li>GALLERY</li>
-      </ul>
-    </div>
 
-    <div class="page">
-      <div class="text">
-        <h1>MYSTERIES OF GALAXY</h1>
-        <p>
-          Galaxies, vast collections of stars, gas, dust, and dark matter, hold numerous mysteries.
-          One of the biggest is the nature of dark matter and dark energy, which together make up 
-          the vast majority of the universe's mass-energy content but remain undetected directly. 
-          The formation and evolution of galaxies, including the role of mergers and interactions, 
-          are also active areas of research. Furthermore, the existence of supermassive black holes 
-          at the centers of most galaxies, and how they influence galactic evolution, is another 
-          enduring puzzle. Finally, the discovery of galaxies with little or no dark matter challenges 
-          our understanding of galaxy formation and could provide clues about the nature of dark matter itself.
-        </p>
+      .text h1 {
+        margin-top: 90px;
+        margin-bottom: 30px;
+      }
+
+      .image {
+        width: 300px;
+        height: 300px;
+        background: url("/Users/arshsinghbhardwaj/Downloads/WhatsApp Image 2025-06-26 at 13.58.25.jpeg") no-repeat center center;
+        background-size: contain;
+        mix-blend-mode: color-dodge;
+        margin: 40px 20px;
+        flex: 0 0 300px;
+      }
+
+      p {
+        font-size: 21px;
+      }
+
+      @media screen and (max-width: 768px) {
+        .page {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .text {
+          font-size: 18px;
+          padding: 0 15px;
+        }
+
+        .image {
+          margin-top: 30px;
+        }
+
+        .title, ul li {
+          width: 100%;
+          text-align: center;
+        }
+
+        ul {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        ul li {
+          margin: 10px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="top">
+        <div class="title">
+          <h1 class="line" style="display: inline; margin-right: 21px;">UNFILTERED DRAFTS</h1>
+          <h5 style="display: inline;">MY PERSONAL BLOG</h5>
+          <h3>"Where every word finds its place."</h3>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">RESOURCES</a></li>
+            <li><a href="">GALLERY</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="image"></div>
+      <div class="page">
+        <div class="text">
+          <h1>Our Shared Memoir</h1>
+          <p>
+            Dear Soul friend,<br><br>
+            We probably don’t know each other, but we are more akin than you might think. Even as strangers, we carry echoes of each other’s stories. Our paths could be completely different — but haven’t we gone through the same phases of life? Haven’t we been dealt similar cards of pain, guilt, and regret?<br><br>
+            At our core, don’t we all crave happiness, compassion, and peace? Isn’t the desire to be loved, understood, and respected something we universally share — whether by ourselves or someone else?<br><br>
+            We all get lost while trying to find clarity, doubt ourselves, and dread the worst possibilities. At times, we get hopeless too.<br><br>
+            But that’s what makes us empathize with each other. That’s why we don’t always need a reason to be kind. Maybe we’ve not walked in each other’s shoes — but we’ve kind of tried them on. So why not give the benefit of the doubt? Why skip to the ending when we don’t even know the whole story?<br><br>
+            Let’s pause before we draw conclusions. Let’s read between the lines before we draw the line.<br><br>
+            Let’s share a fragment of time that we’d both highlight in our own memoirs.
+          </p>
+        </div>
+
+        <div class="image"></div>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
