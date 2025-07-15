@@ -245,6 +245,7 @@
       background-position: center;
       mix-blend-mode:color-dodge;
       align-self: center;
+      animation: zoomInOut 3s infinite ease-in-out;
     }
 
     @media (max-width: 768px) {
@@ -262,6 +263,11 @@
         text-align: center;
       }
     }
+    @keyframes zoomInOut{
+                0%{transform: scale(1);}
+                50%{transform: scale(1.1);}
+                100%{transform: scale(1);}
+            }
   </style>
 </head>
 <body>
